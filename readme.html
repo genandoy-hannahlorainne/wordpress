@@ -1,145 +1,185 @@
-# Pomodify
-#### – A customizable Pomodoro productivity tracker. Helps users focus with flexible timers, activity grouping, and progress tracking.
-
-## 📚 Table of Contents
-- [🚀 Features](#-features)
-- [🌐 Live Demo](#-live-demo)
-- [🛠️ Tech Stack](#-tech-stack)
-- [📁 Project Folder Structure](#-project-folder-structure)
-- [🗂️ Git Workflow Guidelines](#-git-workflow-guidelines)
-- [📜 General Coding Guidelines](#-general-coding-guidelines)
-- [🧑‍💻 Contributors](#-contributors)
-- [📝 Developer Documentation](#-developer-documentation)
-
-## 🚀 Features
-
-- Customizable work/break sessions
-- User accounts with authentication
-- Activities to categorize sessions
-- Session logs & reports with notes
-- Responsive UI for web & mobile
-
-## 🌐 Live Demo
-
-> - [Pomidify Web Host](https://pomodify.site/)
-
-## 🔑 Test User Account 
-- Use the following credentials to explore the system:
-- **Email**: johndoe@gmail.com
-- **Password**: JohnDoe@123
-
-## 🛠️ Tech Stack
-- **Frontend:** Angular, Tailwind CSS
-- **Backend:** Spring Boot, OpenAPI (Swagger), Lombok, MapStruct
-- **Database:** PostgreSQL
-- **Database Migrations:** Flyway
-- **Authentication & Security:** JWT, Spring Security
-- **Integrations:** Google Calendar API
-- **DevOps & CI/CD:** Docker, GitHub Actions
-
 <p align="center">
-	<img src="pomodify-frontend/src/images/logo.png" alt="Pomodify logo" width="220" />
+  <img src="pomodify-frontend/src/images/logo.png" alt="Pomodify logo" width="220" />
 </p>
 
+<div align="center">
+
 # Pomodify
 
-Pomodify is a customizable Pomodoro productivity tracker. Helps users focus with flexible timers, activity grouping, and progress tracking.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com/PUP-BSIT/project-g-cache)
 
-- Build an easy-to-use web app that supports customizable focus sessions.
-- Give users a way to record, review, and manage their progress.
-- Let users organize sessions into activities for better tracking and context.
-- Provide secure accounts so users can log in and manage their own data.
-- Ensure the app works well on both computers and mobile devices.
+</div>
 
-## 📚 Table of Contents
-- [🚀 Features](#-features)
-- [🌐 Live Demo](#-live-demo)
-- [🛠️ Tech Stack](#-tech-stack)
-- [🎨 Design](#-design)
-- [📁 Project Folder Structure](#-project-folder-structure)
-- [🗂️ Git Workflow Guidelines](#-git-workflow-guidelines)
-- [📜 General Coding Guidelines](#-general-coding-guidelines)
-- [🧑‍💻 Contributors](#-contributors)
-- [🤖 AI-Powered Features](#-ai-powered-features)
+Pomodify is a customizable Pomodoro productivity tracker designed to help users focus with flexible timers, activity grouping, and comprehensive progress tracking.
 
-## 🚀 Features
+**What we're building:**
 
-- Customizable work/break sessions
-- User accounts with authentication
-- Activities to categorize sessions
-- Session logs & reports with notes
-- Responsive UI for web & mobile
-
-## 🌐 Live Demo
-
-> - [Pomidify Web Host](https://pomodify.site/)
-
-## 🔑 Test User Account 
-- Use the following credentials to explore the system:
-- **Email**: johndoe@gmail.com
-- **Password**: JohnDoe@123
-
-## 🛠️ Tech Stack
-- **Frontend:** Angular (SCSS)
-- **Backend:** Spring Boot, OpenAPI (Swagger), Lombok, MapStruct
-- **Database:** PostgreSQL
-- **Database Migrations:** Flyway
-- **Authentication & Security:** JWT, Spring Security
-- **Integrations:** Google Calendar API
-- **DevOps & CI/CD:** Docker, GitHub Actions
-
-## 🎨 Design
-
-- **Style direction:** Techy, modern UI with clear typography and subtle UI motion.
-- **Primary color:** `#5FA9A4` (teal mint) — use for accents, CTAs, and highlights.
-- **Notes:** The frontend uses SCSS-based component styles (see `pomodify-frontend/src/app/**`), not Tailwind utility classes.
-
-## 📁 Project Folder Structure
-> Example structure:
-```
-project-root/
-├── pomodify-frontend/  # Angular app (SCSS)
-├── pomodify-backend/   # Spring Boot app
-├── document/           # API docs and diagrams
-└── README.md
-```
-
-## 🗂️ Git Workflow Guidelines
-
-### 🌿 Branch Types and Naming Conventions
-| Branch Type | Description                 | Naming Convention      |
-|-------------|-----------------------------|-----------------------|
-| main        | Production branch           | main                  |
-| feature     | New feature development     | feature/              |
-| bugfix      | Fixes identified bugs       | bugfix/               |
-| docs        | Documentation changes       | docs/                 |
-
-### 🔧 Branching Guidelines
-- Create a branch from `main` for any feature, bugfix, or enhancement.
-- Use descriptive branch names (e.g., `feature/user-authentication`).
-- Commit often with meaningful messages.
-- Keep branches focused; one purpose per branch.
-
-## 📜 General Coding Guidelines
-- Follow language-specific style guides.
-- Write clear, maintainable code.
-- Add comments where necessary.
-- Use meaningful variable and function names.
-
-## 🧑‍💻 Contributors
-- [Hannah Lorainne Genandoy](https://www.linkedin.com/in/hannah-lorainne-genandoy-3b8a1b2b2/) – Project Manager / Developer
-- [Daniel Victorioso](https://www.linkedin.com/in/daniel-victorioso-304688292/) – Technical Lead / Developer
-- [Ivan Delumen](https://www.linkedin.com/in/ivan-delumen-53982728a/) – UI/UX / Developer
-- [Gerald Mamasalanang](https://www.linkedin.com/in/gerald-kasan-mamasalanang-95a306386) – Tester / Developer
-- [Simone Jake Reyes](https://www.linkedin.com/in/simone-jake-reyes-75199234a/) – UI/UX / Developer
-
-## 🤖 AI-Powered Features
-
-- **Session suggestions:** Context-aware next-step suggestions for activities (`suggestNextStep`).
-- **Smart blueprint generation:** AI-generated study/learning blueprints (preview + confirm flows).
-- **Session note suggestions:** AI-backed suggested notes to help users summarize work.
-- **Backend adapter model:** The backend exposes a pluggable AI adapter (a `NoOp` fallback is included by default). You can enable/replace with external AI providers via backend configuration.
+- ✨ Build an easy-to-use web app that supports customizable focus sessions.
+- 📊 Give users a way to record, review, and manage their progress.
+- 🏷️ Let users organize sessions into activities for better tracking and context.
+- 🔐 Provide secure accounts so users can log in and manage their own data.
+- 📱 Ensure the app works well on both computers and mobile devices.
 
 ---
 
-For more technical documentation, see the `document/` and `pomodify-backend/` folders.
+## 📚 Table of Contents
+
+- [🎯 Quick Start](#-quick-start)
+- [🚀 Features](#-features)
+- [🛠️ Tech Stack](#-tech-stack)
+- [🎨 Design](#-design)
+- [📁 Project Structure](#-project-structure)
+- [🔧 Development](#-development)
+- [🧑‍💻 Contributors](#-contributors)
+- [🤖 AI-Powered Features](#-ai-powered-features)
+
+---
+
+## 🎯 Quick Start
+
+**Live Demo:** [Pomodify Web App](https://pomodify.site/)
+
+**Test Credentials:**
+- **Email:** johndoe@gmail.com
+- **Password:** JohnDoe@123
+
+---
+
+## 🚀 Features
+
+| Feature | Description |
+|---------|-------------|
+| ⏱️ **Customizable Timers** | Flexible work/break sessions tailored to your needs |
+| 🔐 **User Authentication** | Secure accounts with JWT & Spring Security |
+| 🏷️ **Activity Grouping** | Organize sessions by category for better context |
+| 📊 **Session Tracking** | Log notes, view reports, and monitor progress |
+| 📱 **Responsive Design** | Seamless experience on web & mobile devices |
+
+---
+
+## 🌐 Live Demo
+
+Visit **[Pomodify.site](https://pomodify.site/)** to explore the app in action.
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework:** Angular (v20.3)
+- **Styling:** SCSS (component-scoped)
+- **UI Library:** Angular Material
+- **Testing:** Playwright (E2E), Karma + Jasmine (unit)
+- **API Communication:** RxJS, HttpClient
+
+### Backend
+- **Framework:** Spring Boot 3
+- **Documentation:** OpenAPI (Swagger)
+- **Utilities:** Lombok, MapStruct
+- **Persistence:** JPA/Hibernate
+
+### Data & Infrastructure
+- **Database:** PostgreSQL
+- **Migrations:** Flyway
+- **Authentication:** JWT + Spring Security
+- **External APIs:** Google Calendar
+- **Deployment:** Docker, GitHub Actions CI/CD
+
+## 🎨 Design
+
+- **Direction:** Techy, modern UI with clear typography and subtle motion.
+- **Primary Color:** `#5FA9A4` (Teal Mint) — accents, CTAs, highlights.
+- **Styling Approach:** SCSS-based component styles (not Tailwind).
+- **Reference:** See [pomodify-frontend/src/app](pomodify-frontend/src/app) for component implementations.
+
+---
+
+## 📁 Project Structure
+> Example structure:
+```
+project-root/
+├── pomodify-frontend/        # Angular app (SCSS styling)
+│   ├── src/app/             # Components, services, pages
+│   ├── e2e/                 # Playwright tests
+│   └── package.json
+├── pomodify-backend/         # Spring Boot app
+│   ├── src/main/java/       # Application logic
+│   ├── src/test/java/       # Unit tests
+│   └── pom.xml
+├── document/                 # API docs, diagrams, guides
+├── deploy-documentation/     # CI/CD & deployment guides
+└── README.md
+```
+
+---
+
+## 🔧 Development
+
+### 🌿 Branch Types & Naming
+
+| Type | Purpose | Convention |
+|------|---------|-----------|
+| `main` | Production-ready code | `main` |
+| `feature` | New features | `feature/descriptive-name` |
+| `bugfix` | Bug fixes | `bugfix/issue-description` |
+| `docs` | Documentation | `docs/what-changed` |
+
+### ✅ Best Practices
+
+- ✔️ Create branches from `main` for any work.
+- ✔️ Use descriptive branch names.
+- ✔️ Commit frequently with clear messages.
+- ✔️ Keep one feature per branch.
+- ✔️ Submit a PR and request review before merging.
+
+---
+
+## 📜 Code Guidelines
+- 🎯 **Style:** Follow language-specific guides (Angular, Java, etc.).
+- 📝 **Readability:** Write clear, self-documenting code.
+- 💬 **Comments:** Add them where logic isn't immediately obvious.
+- 🏷️ **Naming:** Use meaningful variable and function names.
+- 🧪 **Testing:** Aim for good test coverage.
+
+---
+
+## 🧑‍💻 Contributors
+
+| Name | Role | Links |
+|------|------|-------|
+| [Hannah Lorainne Genandoy](https://www.linkedin.com/in/hannah-lorainne-genandoy-3b8a1b2b2/) | Project Manager / Developer | [LinkedIn](https://www.linkedin.com/in/hannah-lorainne-genandoy-3b8a1b2b2/) |
+| [Daniel Victorioso](https://www.linkedin.com/in/daniel-victorioso-304688292/) | Technical Lead / Developer | [LinkedIn](https://www.linkedin.com/in/daniel-victorioso-304688292/) |
+| [Ivan Delumen](https://www.linkedin.com/in/ivan-delumen-53982728a/) | UI/UX / Developer | [LinkedIn](https://www.linkedin.com/in/ivan-delumen-53982728a/) |
+| [Gerald Mamasalanang](https://www.linkedin.com/in/gerald-kasan-mamasalanang-95a306386) | QA / Developer | [LinkedIn](https://www.linkedin.com/in/gerald-kasan-mamasalanang-95a306386) |
+| [Simone Jake Reyes](https://www.linkedin.com/in/simone-jake-reyes-75199234a/) | UI/UX / Developer | [LinkedIn](https://www.linkedin.com/in/simone-jake-reyes-75199234a/) |
+
+---
+
+## 🤖 AI-Powered Features
+
+Pomodify includes intelligent AI features to enhance productivity:
+
+- 🎯 **Session Suggestions** — Context-aware next-step recommendations for your activities.
+- 🧠 **Smart Blueprints** — AI-generated study/learning plans with beginner & intermediate levels.
+- 📝 **Session Notes** — AI-backed suggestions to help you summarize and reflect on work.
+- 🔌 **Pluggable Architecture** — The backend supports swappable AI adapters; a `NoOp` fallback is included. Enable external AI providers via configuration.
+
+---
+
+## 📚 Documentation
+
+For detailed guides and technical docs, explore:
+
+- **API Docs:** [pomodify-backend/api-docs](pomodify-backend/api-docs)
+- **Architecture & Diagrams:** [document/](document/)
+- **CI/CD & Deployment:** [deploy-documentation/](deploy-documentation/)
+- **Developer Guide:** [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md)
+
+---
+
+<div align="center">
+
+**Made with ❤️ by the PUP-BSIT team**
+
+[🌐 Live App](https://pomodify.site/) • [📖 Docs](document/) • [🐛 Report Issue](https://github.com/PUP-BSIT/project-g-cache/issues)
+
+</div>
